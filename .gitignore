@@ -1,5 +1,6 @@
 *.class
 *.log
+*.generated.scala
 
 # sbt specific
 .cache
