@@ -1,11 +1,14 @@
 
-
-message MyInnerObj {
-  String id = 0x0001;
+message Key = 0x0009 {
+    sint32 key = 0x000A;
 }
 
-message MyObj {
-  String name = 0x0002;
-  MyInnerObj myInnerObject = 0x0003;
-  repeated MyInnerObj myInnerObjects = 0x0004;
+message MyInnerObj = 0x0005 {
+  string someString = 0x0002;
+  Decimal someDecimal = 0x0007;
+}
+
+message MyObj = 0x0006 {
+  Instant someInstant = 0x0008;
+  repeated MyInnerObj myInnerObjects = 0x0003;
 }
