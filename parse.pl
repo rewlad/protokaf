@@ -1,5 +1,6 @@
 #!/usr/bin/perl
 use strict;
+use warnings FATAL => 'all';
 
 my $mode = $ARGV[0]=~/^(intf|impl)$/ ? $1 : die;
 my @lines = <STDIN>;
